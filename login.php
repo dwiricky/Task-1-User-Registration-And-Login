@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $loginError = 'Username atau Email tidak ditemukan!';
 
             if ($_SESSION['login_attempts'] >= $WARNING_THRESHOLD && $_SESSION['login_attempts'] < $MAX_ATTEMPTS) {
-                $loginError .= ' Jangan menyerah, pastikan kota Anda benar.';
+                $loginError .= ' Jangan menyerah, pastikan kata sandi Anda benar.';
             }
         }
         $stmt->close();
