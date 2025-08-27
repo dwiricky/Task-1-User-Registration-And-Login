@@ -56,8 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 // Peringatan khusus jika telah mencapai threshold tertentu
                 if ($_SESSION['login_attempts'] >= $WARNING_THRESHOLD && $_SESSION['login_attempts'] < $MAX_ATTEMPTS) {
-                    // Anda bisa menampilkan peringatan yang lebih jelas di UI
-                    // Misal mengubah pesan atau menambahkan info di bawah sini
+                    /sini
                     $loginError .= ' (peringatan: beberapa upaya gagal telah dicatat.)';
                 }
             }
